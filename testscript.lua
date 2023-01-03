@@ -640,7 +640,7 @@ local window = library:CreateWindow("Car Crushers 2", Vector2.new(450,330), Enum
         local jumpSec = vTab:CreateSector("Jump", 'right')
             jump_toggle = jumpSec:AddToggle("ON/OFF", flags.jump.value, flags.jump)
             jump_keybind = jumpSec:AddKeybind("Jump Key",Enum.KeyCode.G, nil, jump)
-            jumppower_slider = jumpSec:AddSlider("Amount", 0, flags.jumppower.value, 50, 1, flags.jumppower)
+            jumppower_slider = jumpSec:AddSlider("Amount", 0, flags.jumppower.value, 400, 1, flags.jumppower)
             
         local miscSec = vTab:CreateSector("Misc", 'left')
             invincible_toggle = miscSec:AddToggle("No Damage", flags.invincible.value, flags.invincible)
