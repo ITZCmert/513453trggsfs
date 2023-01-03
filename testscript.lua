@@ -176,13 +176,13 @@ function destroyCar()
         hum.Sit = false 
         hum.RootPart.Velocity = Vector3.new(0,0,0)
     end
-    --[[
+    
     local bodyPosition = car.PrimaryPart:FindFirstChild("BodyPosition") or Instance.new("BodyPosition", car.PrimaryPart)
     bodyPosition.D = 800
     bodyPosition.P = 999999999
     bodyPosition.MaxForce = Vector3.new(999999999,999999999,999999999)
     bodyPosition.Position = car.PrimaryPart.Position + Vector3.new(0,10,0)
-    ]]
+    
     for i = 1,5 do
         local parts = {}
         local collision
