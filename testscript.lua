@@ -572,7 +572,7 @@ local window = library:CreateWindow("Car Crushers 2", Vector2.new(450,330), Enum
                 end
             end)
 
-            local moneystring = "Money Earned: "
+            local moneystring = "Денег получено: "
             moneymade_label = infoSec:AddLabel(moneystring.. "0")
             task.spawn(function()
                 local moneymade = 0
