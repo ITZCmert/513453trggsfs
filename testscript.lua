@@ -563,7 +563,7 @@ end)
 local window = library:CreateWindow("Car Crushers 2", Vector2.new(450,330), Enum.KeyCode.RightShift)
     local afTab = window:CreateTab("Autofarm")
         local infoSec = afTab:CreateSector("Info", 'left')
-            local bestcarstring = "Best Car: "
+            local bestcarstring = "ЛУЧШАЯ МАШИНА: "
             bestcar_label = infoSec:AddLabel(bestcarstring)
             task.spawn(function()
                 while wait() do
@@ -572,7 +572,7 @@ local window = library:CreateWindow("Car Crushers 2", Vector2.new(450,330), Enum
                 end
             end)
 
-            local moneystring = "Денег получено: "
+            local moneystring = "ДЕНЕГ ПОЛУЧЕНО: "
             moneymade_label = infoSec:AddLabel(moneystring.. "0")
             task.spawn(function()
                 local moneymade = 0
@@ -585,7 +585,7 @@ local window = library:CreateWindow("Car Crushers 2", Vector2.new(450,330), Enum
                 end
             end)
             
-            local partsstring = "Parts Earned: "
+            local partsstring = "ДЕТАЛЕЙ ПОЛУЧЕНО: "
             partsmade_label = infoSec:AddLabel(partsstring.. "0")
             task.spawn(function()
                 local partsmade = 0
